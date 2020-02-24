@@ -1,0 +1,8 @@
+ALTER TABLE project_list
+ ADD COLUMN proj_id INT(10) NOT NULL AUTO_INCREMENT,
+ ADD COLUMN proj_description VARCHAR(100) NOT NULL,
+ ADD COLUMN start_date DATE NOT NULL,
+ ADD COLUMN cost DEC(3,2) NOT NULL,
+ ADD COLUMN contracting_company VARCHAR(50)NOT NULL,
+ ADD COLUMN phone_number INT(10)NOT NULL, 
+ ADD PRIMARY KEY(proj_id);
